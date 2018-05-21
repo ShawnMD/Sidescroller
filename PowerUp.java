@@ -1,0 +1,17 @@
+import java.awt.*;
+
+public class PowerUp extends Tile {
+
+    boolean enabled = false;
+
+    public PowerUp(Image image, int x, int y){
+        super(image, x, y);
+    }
+
+    public void paint(Graphics g){
+        if(enabled){
+            Graphics2D g2d = (Graphics2D)g;
+        }
+    }
+
+}
