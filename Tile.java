@@ -7,6 +7,9 @@ public class Tile {
     int x, y;
 
     public Tile(Image image, int x, int y){
+        this.image = image;
+        this.x = x;
+        this.y = y;
 
     }
 
@@ -15,7 +18,10 @@ public class Tile {
 
     }
 
-    public void paint(Graphics g){
+    public void paint(Graphics g, int camera){
+        Graphics2D g2d = (Graphics2D)g;
+        int modifiedX = camera + x;
+        g2d.drawImage(image, modifiedX, y, null);
 
     }
 }

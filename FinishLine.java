@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.util.function.ToLongBiFunction;
 
 public class FinishLine extends Tile {
 
