@@ -47,4 +47,44 @@ public class GameStates {
     public static void setDISTANCE(int DISTANCE){
         GameStates.DISTANCE = DISTANCE;
     }
+
+    public static void restart(){
+        menu();
+        DEAD = false;
+    }
+
+    public static void menu(){
+        setMENU(true);
+        setPLAY(false);
+        setPAUSE(false);
+        setEND(false);
+    }
+
+    public static void play(){
+        setMENU(false);
+        setPLAY(true);
+        setPAUSE(false);
+        setEND(false);
+    }
+
+    public static void pause(){
+        setMENU(false);
+        setPLAY(false);
+        setPAUSE(true);
+        setEND(false);
+    }
+
+    public static void resume(){
+        setMENU(false);
+        setPLAY(true);
+        setPAUSE(false);
+        setEND(false);
+    }
+
+    public static void end(){
+        setMENU(false);
+        setPLAY(false);
+        setPAUSE(false);
+        setEND(true);
+    }
 }
