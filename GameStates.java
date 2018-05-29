@@ -60,7 +60,7 @@ public class GameStates {
         setEND(false);
     }
 
-    public static void play(){
+    public static void start(){
         setMENU(false);
         setPLAY(true);
         setPAUSE(false);
